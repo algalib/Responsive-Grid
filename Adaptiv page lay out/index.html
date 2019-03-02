@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Adaptive page layout</title>
+		<style>
+			.block{
+				width:300px;
+				height:300px;
+				margin-right:20px;
+				margin-top:20px;
+				background-color: blue;
+				float:left;
+			}
+			@media (max-width:450px) {
+				.block{
+					background:red;
+					<!--u can change any width-->
+				}
+			}
+			@media (min-width:451px) and (max-width:550px) {
+				.block{
+					background:yellow;
+				}
+			}
+		</style>
+	</head>
+	<body>
+	<!--Adaptive page lay out create to media quary-->
+	<!--ctrl+shipt+m=mobile view-->
+	
+		<div class="block"></div>
+		<div class="block"></div>
+		<div class="block"></div>
+	</body>
+</html>
